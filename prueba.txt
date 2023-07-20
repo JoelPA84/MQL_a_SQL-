@@ -1,0 +1,23 @@
+SELECT :
+
+ { name: 'John', age: { $gt: 18 } }
+SELECT * FROM table WHERE name = 'John' AND age > 18
+
+INSERT INTO:
+
+INSERT INTO users (name, age, city) VALUES ('John', 25, 'New York')
+INSERT INTO users (name, age, city) VALUES ('John', 25, 'New York')
+
+UPDATE:
+
+UPDATE users { $set: { age: 30, city: 'Los Angeles' } } { name: 'John' }
+UPDATE users SET age = 30, city = 'Los Angeles' WHERE name = 'John'
+
+DELETE:
+
+DELETE FROM users { name: 'John' }
+DELETE FROM users WHERE name = 'John'
+
+
+
+FINISH
